@@ -1,0 +1,26 @@
+package ejer.pkg13.act2;
+import java.util.Scanner;
+public class Ejer13Act2 {
+    public static void main(String[] args) {
+        double valor_compra;
+        int color;
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("Valor compra: ");
+        valor_compra = teclado.nextDouble();
+        System.out.print("Use los numeros 1=roja,2=verde,3=azul,4=blanca,no ponga numero para la pelota amarilla");
+        color = teclado.nextInt();
+        
+        if (color == 1){
+            System.out.println("El valor de la compra es " + (valor_compra-(valor_compra*1)));
+        } else if (color == 2){
+            System.out.println("El valor de la compra es " + (valor_compra-(valor_compra*0.1)));
+        } else if (color==3){
+            System.out.println("El valor de la compra es " + (valor_compra-(valor_compra*0.5)));
+        } else if (color == 4){
+            System.out.println("El valor de la compra es " + (valor_compra));
+        }else {
+            System.out.println("El valor de la compra es " + (valor_compra-(valor_compra*0.25)));
+        } 
+    }
+    
+}
